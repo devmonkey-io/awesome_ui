@@ -12,7 +12,7 @@ class AwesomeAppBarWidget extends PreferredSize {
 
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => Size.fromHeight(157.0);
+  Size get preferredSize => Size.fromHeight(55.0);
 
   @override
   Widget build(BuildContext context) {
