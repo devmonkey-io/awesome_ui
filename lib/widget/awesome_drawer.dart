@@ -12,7 +12,6 @@ class AwesomeDrawerWidget extends StatelessWidget {
         color: Colors.white,
       ),
     ),
-    Divider(),
     ListTile(
       leading: Icon(Icons.attach_file),
       title: Text('My Files'),
