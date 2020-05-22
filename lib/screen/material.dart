@@ -16,11 +16,5 @@ class MaterialScreen extends StatelessWidget {
         body: AwesomeTabBarViewWidget(),
       ),
     );
-
-    return Scaffold(
-      appBar: AwesomeAppBarWidget('Material Home', Colors.deepOrange),
-      drawer: AwesomeDrawerWidget(),
-      bottomNavigationBar: AwesomeBottomNavigationBarWidget(),
-    );
   }
 }
