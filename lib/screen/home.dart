@@ -8,8 +8,8 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AwesomeAppBarWidget('This is title', Colors.orange),
       body: HomeBodyWidget(),
+      appBar: AwesomeAppBarWidget('This is title', Colors.orange),
       bottomNavigationBar: AwesomeBottomNavigationBarWidget(),
       drawer: AwesomeDrawerWidget(),
     );
