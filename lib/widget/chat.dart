@@ -17,7 +17,7 @@ class ChatWidget extends StatelessWidget {
         ),
         title: Text(chat.senderName),
         subtitle: Text(chat.senderMessage),
-        trailing: Text(chat.sendTime),
+        trailing: Text('${chat.notificationCount}'),
       ),
     );
   }
