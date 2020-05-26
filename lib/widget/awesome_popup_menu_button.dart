@@ -18,7 +18,7 @@ class AwesomePopupMenuButton extends StatelessWidget {
 
     switch (selectedValue) {
       case 'view_profile':
-        // create a function to open view profile screen
+      // create a function to open view profile screen
     }
   }
 
