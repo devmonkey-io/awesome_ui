@@ -22,7 +22,7 @@ class AwesomeDropdownButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       title: Text('Gender'),
-      trailing: DropdownButton(
+      trailing: DropdownButton<String>(
         value: _value,
         items: _items,
         onChanged: _onChanged,
