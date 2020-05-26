@@ -1,9 +1,13 @@
 import 'package:awesome_ui/widget/awesome_button_bar.dart';
+import 'package:awesome_ui/widget/awesome_dropdown_button.dart';
+import 'package:awesome_ui/widget/awesome_popup_menu_button.dart';
 import 'package:flutter/material.dart';
 
 class MaterialButtonScreen extends StatelessWidget {
   final List<Widget> _children = <Widget>[
     AwesomeButtonBarWidget(),
+    AwesomeDropdownButtonWidget(),
+    AwesomePopupMenuButton(),
   ];
 
   @override
