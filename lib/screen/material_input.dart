@@ -1,7 +1,14 @@
+import 'package:awesome_ui/widget/awesome_check_box.dart';
+import 'package:awesome_ui/widget/awesome_date_picker.dart';
+import 'package:awesome_ui/widget/awesome_time_picker.dart';
 import 'package:flutter/material.dart';
 
 class MaterialInputScreen extends StatelessWidget {
-  final List<Widget> _children = <Widget>[];
+  final List<Widget> _children = <Widget>[
+    AwesomeCheckBoxWidget(),
+    AwesomeDatePickerWidget(),
+    AwesomeTimePickerWidget(),
+  ];
 
   @override
   Widget build(BuildContext context) {
