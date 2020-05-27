@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AwesomeRadioButtonWidget extends StatelessWidget {
-  String _selectedGender = 'male';
-  String _rationCard;
+  String _selectedGender = 'female';
 
   @override
   Widget build(BuildContext context) {
