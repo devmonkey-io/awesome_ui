@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AwesomeSwitchWidget extends StatelessWidget {
-  bool _value = true;
+  bool _value = false;
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,5 @@ class AwesomeSwitchWidget extends StatelessWidget {
     );
   }
 
-  void _onChanged(bool value) {
-
-  }
+  void _onChanged(bool value) {}
 }
