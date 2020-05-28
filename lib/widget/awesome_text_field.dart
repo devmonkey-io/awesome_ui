@@ -4,6 +4,7 @@ class AwesomeTextFieldWidget extends StatelessWidget {
   final InputDecoration _inputDecoration = InputDecoration(
     labelText: 'Email Address',
     hintText: 'someone@example.com',
+
   );
 
   @override
@@ -12,6 +13,7 @@ class AwesomeTextFieldWidget extends StatelessWidget {
       padding: EdgeInsets.only(left: 16.0, right: 16.0),
       child: TextField(
         decoration: _inputDecoration,
+        keyboardType: TextInputType.emailAddress,
       ),
     );
   }
