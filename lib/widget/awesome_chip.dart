@@ -8,13 +8,11 @@ class AwesomeChipWidget extends StatelessWidget {
         left: 16.0,
         right: 16.0,
       ),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+          Container(),
           Wrap(
-            direction: Axis.horizontal,
-            runAlignment: WrapAlignment.start,
-            crossAxisAlignment: WrapCrossAlignment.start,
-            alignment: WrapAlignment.start,
             children: <Widget>[
               Chip(
                 backgroundColor: Colors.yellow,
@@ -40,7 +38,7 @@ class AwesomeChipWidget extends StatelessWidget {
               ),
               SizedBox(width: 3),
             ],
-          ),
+          )
         ],
       ),
     );
