@@ -1,4 +1,5 @@
 import 'package:awesome_ui/widget/awesome_card.dart';
+import 'package:awesome_ui/widget/awesome_data_table.dart';
 import 'package:flutter/material.dart';
 
 class MaterialInformationDisplayScreen extends StatelessWidget {
@@ -8,8 +9,9 @@ class MaterialInformationDisplayScreen extends StatelessWidget {
       'https://i1065.photobucket.com/albums/u393/shafeekalipmna/13116524_1119628738058610_59664011006005340_o_zpscht14iki.jpg',
       4.5,
       'Non Vegetarian Restaurant',
-      'Kozhikkode - Palakkad Bypass Rd, Perintalmanna, Kerala 679322',
+      'Kozhikkode - Palakkad Bypass Rd, Perinthalmanna, Kerala 679322',
     ),
+    AwesomeDataTableWidget(),
   ];
 
   @override
