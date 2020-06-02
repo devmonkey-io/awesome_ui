@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
-class AwesomeSwitchWidget extends StatelessWidget {
+class AwesomeSwitchWidget extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => _AwesomeSwitchWidget();
+}
+
+class _AwesomeSwitchWidget extends State<AwesomeSwitchWidget> {
   bool _value = false;
 
   @override
@@ -13,5 +18,9 @@ class AwesomeSwitchWidget extends StatelessWidget {
     );
   }
 
-  void _onChanged(bool value) {}
+  void _onChanged(bool value) {
+    this.setState(() {
+      _value = value;
+    });
+  }
 }

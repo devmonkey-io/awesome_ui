@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
-class AwesomeRadioButtonWidget extends StatelessWidget {
-  String _selectedGender = 'female';
+class AwesomeRadioButtonWidget extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => _AwesomeRadioButtonWidget();
+}
+
+class _AwesomeRadioButtonWidget extends State<AwesomeRadioButtonWidget> {
+  String _selectedGender;
 
   @override
   Widget build(BuildContext context) {
@@ -16,16 +21,22 @@ class AwesomeRadioButtonWidget extends StatelessWidget {
           Radio(
             value: 'male',
             groupValue: _selectedGender,
-            onChanged: (String selectedGender) {},
+            onChanged: _onChanged,
           ),
           Text('Female'),
           Radio(
             value: 'female',
             groupValue: _selectedGender,
-            onChanged: (String selectedGender) {},
+            onChanged: _onChanged,
           ),
         ],
       ),
     );
+  }
+
+  void _onChanged(String selectedGender) {
+    this.setState(() {
+      _selectedGender = selectedGender;
+    });
   }
 }
